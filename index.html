@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<script type="text/javascript">
+	
+		function jardynametry()
+		{
+			var jardy = document.getElementById("jardy").value;
+			
+			document.getElementById("wynik").innerHTML=jardy*0.91;
+		
+		}
+
+        function metrynajardy()
+        {
+            var metry = document.getElementById("metry").value;
+
+            document.getElementById("w").innerHTML=metry*1.09;
+        }
+	
+	</script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <h2>Przelicz jardy na metry</h2>
+	<input type="text" id="jardy" />
+	<input type="submit" value="Przelicz" onclick="jardynametry()"/>
+	
+	<div id="wynik"></div>
+    <br/>
+    <h2>Przelicz metry na jardy</h2>
+    <input type="text" id="metry"/>
+    <input type="submit" value="Przelicz" onclick="metrynajardy()">
+    <div id="w"></div>
+
+</body>
+
+</html>
